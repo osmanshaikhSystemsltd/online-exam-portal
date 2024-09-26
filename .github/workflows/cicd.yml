@@ -1,0 +1,12 @@
+name: My First Workflow
+on: push
+
+jobs:
+  first_job:
+    name: my first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        run: echo "Welcome"
+      - name: Directory Show
+        run: echo "Listing Directory" && ls -lrt
