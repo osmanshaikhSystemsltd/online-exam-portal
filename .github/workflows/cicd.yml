@@ -10,3 +10,7 @@ jobs:
         run: echo "Welcome"
       - name: Directory Show
         run: echo "Listing Directory" && ls -lrt
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Print File Name
+        run: cat README.md
